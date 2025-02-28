@@ -5,8 +5,19 @@ function App() {
     <div className="App">
       <header className="App-header">
         <h1>리액트 gh-pages 배포하기</h1>
-        <p>npm run deploy로 업데이트</p>
-        <p>이후 다시 커밋, 푸쉬</p>
+        <ol>
+          <li>npm install gh-pages</li>
+          <li>npm run build</li>
+          <li>package.json 변경
+              script에 
+                "deploy": "gh-pages -d build"
+                "predeploy": "npm run build",
+               추가
+          </li>
+          <li>"homepage": "https://chobee.github.io/레퍼지토리명/", // github 주소 추가</li>
+          <li>npm run deploy</li>
+          <li>gh-pages 브랜치 생성확인 후 저장</li>
+        </ol>
       </header>
     </div>
   );
