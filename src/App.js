@@ -10,13 +10,14 @@ function App() {
           <li>npm run build</li>
           <li>package.json 변경
               script에 
-                "deploy": "gh-pages -d build"
-                "predeploy": "npm run build",
+                "deploy": "gh-pages -d build",
+                "predeploy": "npm run build"
                추가
           </li>
-          <li>"homepage": "https://chobee.github.io/레퍼지토리명/", // github 주소 추가</li>
+          <li>"homepage": "https://chobee.github.io/레퍼지토리명/" 주소 추가</li>
           <li>npm run deploy</li>
           <li>gh-pages 브랜치 생성확인 후 저장</li>
+          <li>수정 재배포시 npm run deploy</li>
         </ol>
       </header>
     </div>
