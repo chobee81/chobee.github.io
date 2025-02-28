@@ -24,6 +24,8 @@
   color: white;
 }
 
+.App-header h1 { color: #f4ff8c; }
+
 .App-header ol {
   line-height: 2.5;
   text-align: left;
@@ -33,6 +35,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
